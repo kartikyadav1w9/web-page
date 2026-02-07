@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tile Click</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/global.css" />
+
+    <!-- GAME CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- GLOBAL NAV -->
+    <header class="top-nav">
+        <div class="logo">Idle Game Studio</div>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../games.html">Games</a>
+            <a href="../../about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="game-container">
+
+        <h1>Tile Click</h1>
+
+        <!-- HUD -->
+        <div class="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>High Score: <span id="highScore">0</span></div>
+            <div>Time Left: <span id="timeLeft">3.00</span>s</div>
+        </div>
+
+        <!-- GRID -->
+        <div id="grid" class="grid"></div>
+
+        <!-- CONTROLS -->
+        <button id="startBtn">Start</button>
+
+        <!-- EASTER EGG -->
+        <div id="timeIcon" title="Play time">⏱</div>
+
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>

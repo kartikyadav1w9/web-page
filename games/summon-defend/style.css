@@ -1,0 +1,44 @@
+﻿#game {
+    display: grid;
+    grid-template-columns: repeat(8, 52px);
+    grid-template-rows: repeat(9, 52px);
+    gap: 6px;
+    justify-content: center;
+    margin: 24px auto;
+}
+
+.cell {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #1e223f;
+    border: 1px solid #2a2f5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+    .cell.safe {
+        background: #123b2a;
+    }
+
+    .cell.player {
+        background: linear-gradient(145deg, #22c55e, #16a34a);
+        color: #052e16;
+    }
+
+    .cell.enemy {
+        background: linear-gradient(145deg, #fb923c, #dc2626);
+        color: #3b0a0a;
+    }
+
+    .cell.move {
+        outline: 3px solid #22d3ee;
+    }
+
+    .cell.attack {
+        outline: 3px solid #facc15;
+    }
